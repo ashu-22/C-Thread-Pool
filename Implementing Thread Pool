@@ -1,0 +1,10 @@
+static void *
+_tp_worker(void *arg)
+{
+    /* ... */
+
+    /* Wait until tasks is available. */
+    while (!queue_get(pool->pend_q, &t_ptr)) {
+        /* And then execute it. */
+    }
+}
